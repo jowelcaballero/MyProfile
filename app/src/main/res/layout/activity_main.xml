@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+    <ImageView
+            android:layout_marginTop="60dp"
+            android:layout_width="199dp"
+            android:layout_height="191dp"
+            app:srcCompat="@drawable/jowel_caballero"
+            android:id="@+id/MyProfile"
+            android:layout_centerHorizontal="true"/>
+
+    <TextView
+            android:layout_below="@id/MyProfile"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/app"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_msg"
+            android:textSize="30dp"/>
+    <Button
+            android:layout_below="@id/app"
+            android:id="@+id/button"
+            android:text="My Profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+</RelativeLayout>
