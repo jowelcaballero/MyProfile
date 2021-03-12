@@ -2,13 +2,17 @@
     <string name="app_name">My Application</string>
     <string name="welcome_msg">Welcome to my App</string>
     <string name="description">
-        Im not gonna fight back what Ive become
+        "Im not gonna fight back what Ive become.
+
         Yeah Ive got bruises where I came from
-        But I wouldnt change if I could restart
-        I aint gonna hide these beautiful scars
+        but I wouldnt change if I could restart
+        I aint gonna hide these beautiful scars.
+
         Ive been going way too hard on myself
-        Guess that its the reason that Im feeling like hell
-        But I wouldnt change if I could restart
-        I aint gonna hide these beautiful scars
+        guess that its the reason that Im feeling like hell
+        but I wouldnt change if I could restart.
+
+        I aint gonna hide these beautiful scars"
     </string>
+    <string name="myProfile">MY PROFILE</string>
 </resources>

@@ -9,22 +9,19 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 public class MyProfile extends AppCompatActivity {
-    ImageButton imagebtnFirstActivity;
-    ImageButton imagebtnFacebook;
-    ImageButton imagebtnInstagram;
-    ImageButton imagebtnYoutube;
+    Button btnFirstActivity;
+    ImageButton imagebtnFacebook, imagebtnInstagram, imagebtnYoutube;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_profile);
 
-        imagebtnFirstActivity =(ImageButton)findViewById(R.id.imagebtnFirstActivity);
-        imagebtnFirstActivity.setOnClickListener(new View.OnClickListener() {
+        btnFirstActivity =(Button)findViewById(R.id.btnFirstActivity);
+        btnFirstActivity.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MyProfile.this, FirstActivity.class);
-                startActivity(intent);
+                openMyProfile();
             }
         });
 
@@ -53,8 +50,14 @@ public class MyProfile extends AppCompatActivity {
                 openYoutube();
             }
         });
-
     }
+
+    public void openMyProfile()
+    {
+        Intent intent = new Intent(this, FirstActivity.class);
+        startActivity(intent);
+    }
+
     public void openFacebook()
     {
         Uri uri = Uri.parse("https://www.facebook.com/jowel.caballero");
@@ -71,7 +74,7 @@ public class MyProfile extends AppCompatActivity {
 
     public void openYoutube()
     {
-        Uri uri = Uri.parse("https://www.youtube.com/");
+        Uri uri = Uri.parse("https://www.youtube.com/watch?v=2L8gzAasxCw");
         Intent intent = new Intent(Intent.ACTION_VIEW, uri);
         startActivity(intent);
     }

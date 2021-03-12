@@ -17,10 +17,14 @@ public class FirstActivity extends AppCompatActivity {
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(FirstActivity.this, MyProfile.class);
-                startActivity(i);
+                returnToMenu();
             }
         });
+    }
 
+    public void returnToMenu()
+    {
+        Intent intent = new Intent(this, MyProfile.class);
+        startActivity(intent);
     }
 }

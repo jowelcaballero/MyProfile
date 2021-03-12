@@ -18,13 +18,13 @@ public class MainActivity extends AppCompatActivity {
         btnMyProfile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               openprofile();
+               openMenu();
             }
         });
 
     }
 
-    public void openprofile()
+    public void openMenu()
     {
         Intent intent = new Intent(this, MyProfile.class);
         startActivity(intent);

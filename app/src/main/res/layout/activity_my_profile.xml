@@ -73,7 +73,20 @@
                 app:srcCompat="@drawable/intagram1"
                 android:id="@+id/imagebtnInstagram"
                 android:layout_toRightOf="@id/imagebtnFacebook"
-                android:layout_marginTop="30dp"/>
+                android:layout_marginTop="30dp"
+        />
+
+        <Button
+                android:layout_width="260dp"
+                android:layout_height="60dp"
+                android:text="@string/myProfile"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="100dp"
+                android:background="#000000"
+                android:textColor="#FFFFFF"
+                android:id="@+id/btnFirstActivity"
+        />
 
     </RelativeLayout>
     <!--SEPARATED-->
